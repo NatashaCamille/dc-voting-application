@@ -9,3 +9,5 @@ contract election {
         uint256 voteCount;
     }
 }
+
+address public owner;
