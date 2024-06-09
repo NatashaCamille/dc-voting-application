@@ -11,3 +11,5 @@ contract election {
 }
 
 address public owner;
+mapping(uint256 => Candidate) public candidates;
+mapping(address => bool) public voters;
