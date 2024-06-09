@@ -13,3 +13,10 @@ contract election {
 address public owner;
 mapping(uint256 => Candidate) public candidates;
 mapping(address => bool) public voters;
+uint256 public candidataCount;
+
+constructor() {
+        owner = msg.sender;
+        addCandidate("Ryle");
+        addCandidate("Max");
+    }
