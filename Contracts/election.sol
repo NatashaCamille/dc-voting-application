@@ -33,3 +33,8 @@ function vote(uint256 _candidateId) public {
             _candidateId <= candidataCount && _candidateId >= 1,
             "Invalid candidate Id"
         );
+
+ voters[msg.sender] = true;
+        candidates[_candidateId].voteCount++;
+    }
+}
