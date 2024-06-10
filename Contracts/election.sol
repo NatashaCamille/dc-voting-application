@@ -20,3 +20,9 @@ constructor() {
         addCandidate("Ryle");
         addCandidate("Max");
     }
+
+function addCandidate(string memory _name) public{
+        require(msg.sender == owner, "Only owner can add candidates");
+        candidataCount++;
+        candidates[candidataCount] = Candidate(candidataCount, _name, 0);
+    }
