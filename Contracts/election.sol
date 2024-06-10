@@ -26,3 +26,10 @@ function addCandidate(string memory _name) public{
         candidataCount++;
         candidates[candidataCount] = Candidate(candidataCount, _name, 0);
     }
+
+function vote(uint256 _candidateId) public {
+        require(!voters[msg.sender], "You have already voted");
+        require(
+            _candidateId <= candidataCount && _candidateId >= 1,
+            "Invalid candidate Id"
+        );
