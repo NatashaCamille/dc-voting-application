@@ -28,4 +28,21 @@ export default function Home() {
             console.error(error);
           }
     };
+
+    const connectWallet = async () => {
+      try {
+        const { ethereum } = window;
+  
+        if (!ethereum) {
+          alert("Metamask has found!");
+          return;
+        }
+  
+        const accounts = await ethereum.request({
+          method: "eth_requestAccounts",
+        });
+      } catch (err) {
+        console.error(err.message);
+      }
+    };
 }
