@@ -45,4 +45,16 @@ export default function Home() {
         console.error(err.message);
       }
     };
+
+    const getCandidates = async (candidateId) => {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+      const connection = new ethers.Contract(
+        contractAddress,
+        contractABI,
+        provider
+      );
+
+      
+    };
 }
