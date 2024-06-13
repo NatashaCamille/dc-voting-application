@@ -55,6 +55,11 @@ export default function Home() {
         provider
       );
 
-      
+      const candidatesCount = Number(await connection.candidataCount());
+      console.log(candidatesCount);
+
+      for (var i = 1; i <= candidatesCount; i++) {
+
+      };
     };
 }
