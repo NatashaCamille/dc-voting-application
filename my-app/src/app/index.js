@@ -60,6 +60,19 @@ export default function Home() {
 
       for (var i = 1; i <= candidatesCount; i++) {
 
+        const candidate = await connection.candidates(i);
+
+        const id = candidate[0];
+        const name = candidate[1];
+        const voteCount = candidate[2];
+
+        const item = {
+          id: Number(id),
+          name: name.toString(),
+          voteCount: voteCount.toNumber(),
+        };
+
+        setCandidatesUseState((prev) => [...prev, item]);
       };
     };
 }
