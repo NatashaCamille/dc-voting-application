@@ -90,7 +90,15 @@ export default function Home() {
             contractABI,
             provider
           );
-      
+          
+          const hasVoted = await connection.voters(voter);
+          console.log(voter, "hasVoted: ", hasVoted);
+          setVotedOrNot(hasVoted);
+        } catch (error) {
+          console.error(error);
+        }
       }
+
+      
     };
 }
