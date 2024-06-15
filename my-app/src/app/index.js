@@ -99,6 +99,12 @@ export default function Home() {
         }
       }
 
-      
+      const changeHandler = (e) => {
+        setWalletAddress(e.target.value);
+      };
+    
+      const handleButtonClick = async () => {
+        await checkVotingStatus(walletAddress);
+      };
     };
 }
