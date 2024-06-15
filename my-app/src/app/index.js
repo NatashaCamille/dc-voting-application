@@ -29,6 +29,8 @@ export default function Home() {
           }
     };
 
+//Connect wallet
+
     const connectWallet = async () => {
       try {
         const { ethereum } = window;
@@ -45,6 +47,8 @@ export default function Home() {
         console.error(err.message);
       }
     };
+
+//Get candidates
 
     const getCandidates = async (candidateId) => {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -73,6 +77,20 @@ export default function Home() {
         };
 
         setCandidatesUseState((prev) => [...prev, item]);
-      };
+      }
+
+      //Check voting status
+
+      const checkVotingStatus = async (voter) => {
+        try {
+          const provider = new ethers.providers.Web3Provider(window.ethereum);
+    
+          const connection = new ethers.Contract(
+            contractAddress,
+            contractABI,
+            provider
+          );
+      
+      }
     };
 }
