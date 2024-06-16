@@ -106,5 +106,20 @@ export default function Home() {
       const handleButtonClick = async () => {
         await checkVotingStatus(walletAddress);
       };
+
+      //Voting
+      
+      const vote = async (candidateId) => {
+        try {
+          const provider = new ethers.providers.Web3Provider(window.ethereum);
+          const signer = await provider.getSigner();
+
+          const connection = new ethers.Contract(
+            contractAddress,
+            contractABI,
+            signer
+          );
+        }
+      }
     };
 }
