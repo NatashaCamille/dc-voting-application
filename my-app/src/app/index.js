@@ -108,7 +108,7 @@ export default function Home() {
       };
 
       //Voting
-      
+
       const vote = async (candidateId) => {
         try {
           const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -119,6 +119,11 @@ export default function Home() {
             contractABI,
             signer
           );
+
+          const vote = await connection.vote(candidateId);
+          } catch (error) {
+           console.error(error);
+          }
         }
       }
     };
