@@ -124,7 +124,16 @@ export default function Home() {
           } catch (error) {
            console.error(error);
           }
-        }
+        };
+
+        const handleChange2 = (e) => {
+          setCandidateId(e.target.value);
+        };
+
+        const buttonClick2 = () => {
+          vote(candidateId);
+        };
+
+        
       }
     };
-}
