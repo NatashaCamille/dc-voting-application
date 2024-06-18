@@ -140,6 +140,5 @@ export default function Home() {
           getCandidates();
         }, []);
 
-        
       }
     };
