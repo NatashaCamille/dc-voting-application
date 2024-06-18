@@ -134,6 +134,12 @@ export default function Home() {
           vote(candidateId);
         };
 
+        useEffect(() => {
+          checkIfWalletIsConnected();
+          connectWallet();
+          getCandidates();
+        }, []);
+
         
       }
     };
