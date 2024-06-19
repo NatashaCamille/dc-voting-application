@@ -151,6 +151,13 @@ export default function Home() {
           <link rel="icon" href="/icon.png" />
         </Head>
 
+        <main className="">
+           <Navbar account={account} connectWallet={connectWallet} />
+
+           <h1 className="font-bold text-3xl m-5">Candidates:</h1>
+           
+        </main>
+
         </div>
 
       );
