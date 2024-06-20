@@ -164,6 +164,15 @@ export default function Home() {
                 <th className="py-2 px-4 border">Vote Count</th>
               </tr>
             </thead>
+            <tbody>
+              {candidatesUseState.map((candidate, i) => (
+                <tr key={i}>
+                  <td className="py-2 px-4 border">{candidate.id}</td>
+                  <td className="py-2 px-4 border">{candidate.name}</td>
+                  <td className="py-2 px-4 border">{candidate.voteCount}</td>
+                </tr>
+              ))}
+            </tbody>
             </table>
            </div>
         </main>
