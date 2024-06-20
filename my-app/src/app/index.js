@@ -155,7 +155,17 @@ export default function Home() {
            <Navbar account={account} connectWallet={connectWallet} />
 
            <h1 className="font-bold text-3xl m-5">Candidates:</h1>
-           
+           <div className="flex flex-row">
+           <table className="w-full border-collapse mx-10">
+           <thead>
+              <tr>
+                <th className="py-2 px-4 border">Candidate Id</th>
+                <th className="py-2 px-4 border">Candidate Name</th>
+                <th className="py-2 px-4 border">Vote Count</th>
+              </tr>
+            </thead>
+            </table>
+           </div>
         </main>
 
         </div>
