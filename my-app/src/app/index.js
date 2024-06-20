@@ -175,6 +175,10 @@ export default function Home() {
             </tbody>
             </table>
            </div>
+
+           <div>
+           <h2 className="font-bold text-3xl mt-10 ml-5">Check Voted or Not:</h2>
+           </div>
         </main>
 
         </div>
