@@ -2,7 +2,9 @@
 
 
 export default function Home() {
-
+  const [candidatesUseState, setCandidatesUseState] = useState([]);
+  const [voters, setVoters] = useState([]);
+  
 
     const checkIfWalletIsConnected = async () => {
         try {
