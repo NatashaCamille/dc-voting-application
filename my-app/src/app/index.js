@@ -191,7 +191,16 @@ export default function Home() {
             <button
               onClick={handleButtonClick}
               className="bg-gradient-to-r from-orange-600 to-yellow-500 text-white font-bold py-2 px-4 rounded m-4"
-            ></button>
+            >
+              Check if voted
+            </button>
+            <div className="mt-6">
+              {votedOrNot ? (
+                <p>You have already voted, can not vote anymore!</p>
+              ) : (
+                <p>You have not voted yet!</p>
+              )}
+            </div>
            </div>
            </div>
         </main>
