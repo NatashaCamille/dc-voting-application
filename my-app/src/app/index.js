@@ -231,6 +231,18 @@ export default function Home() {
            </div>
         </main>
 
+        <footer className="flex items-center justify-between bg-gradient-to-r from-gray-900 to-gray-700 p-6 text-white">
+        <a
+          href="https://github.com/NatashaCamille"
+          target="_blank"
+          className="text-left"
+        >
+          My Github
+        </a>
+        
+        </footer>
+       
+
         </div>
 
       );
