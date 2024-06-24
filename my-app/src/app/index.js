@@ -4,6 +4,10 @@
 export default function Home() {
   const [candidatesUseState, setCandidatesUseState] = useState([]);
   const [voters, setVoters] = useState([]);
+  const [account, setCurrentAccount] = useState();
+  const [walletAddress, setWalletAddress] = useState("");
+  const [votedOrNot, setVotedOrNot] = useState();
+  const [candidateId, setCandidateId] = useState();
   
 
     const checkIfWalletIsConnected = async () => {
@@ -202,6 +206,28 @@ export default function Home() {
               )}
             </div>
            </div>
+           </div>
+
+              <div>
+              <h2 className="font-bold text-3xl mt-8 ml-5">Vote: </h2>
+              <div className="flex flex-row mx-10">
+              <input
+              type="text"
+              className=" w-24 mx-3 my-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              pattern="\d{0,2}"
+              maxLength="2"
+              placeholder="Candidate Id"
+              value={candidateId || ""}
+              onChange={handleChange2}
+              required
+            />
+               <button
+              onClick={buttonClick2}
+              className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold py-2 px-4 rounded m-4"
+            >
+              Vote
+            </button>
+              </div>
            </div>
         </main>
 
