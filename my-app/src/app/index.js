@@ -247,11 +247,6 @@ export default function Home() {
           My LinkenIn
         </a>
         </footer>
-       
-
-        </div>
-
-      );
-
-
-    }
+      </div>
+    );
+  }
