@@ -239,7 +239,13 @@ export default function Home() {
         >
           My Github
         </a>
-        
+        <a
+          href="https://www.linkedin.com/in/natasha-nalubega-1a4b44137/"
+          target="_blank"
+          className="text-left"
+        >
+          My LinkenIn
+        </a>
         </footer>
        
 
