@@ -1,5 +1,12 @@
 import { ethers } from "ethers";
 import Navbar from Navbar.jsx;
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import React, { useState, useEffect } from "react";
+import { ethers } from "ethers";
+import { contractABI, contractAddress } from "./Engine";
+import Navbar from "./Navbar";
 
 
 
