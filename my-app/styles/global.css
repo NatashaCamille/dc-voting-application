@@ -5,6 +5,7 @@
 
 .container {
     padding: 0 2rem;
+    
   }
   
   .main {
@@ -42,6 +43,7 @@
   .title a:focus,
   .title a:active {
     text-decoration: underline;
+    font-size: 2rem;
   }
   
   .title {
