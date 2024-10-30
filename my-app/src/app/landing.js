@@ -1,5 +1,5 @@
 //landing 
-Things to consider
+Things to consider and amend
 
 Have to Test it
 Redevelop it
