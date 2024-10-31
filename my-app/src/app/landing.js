@@ -4,7 +4,7 @@ Things to consider and amend
 Have to Test it
 Redevelop it
 Restructure 
-Readapt 
+Readapt with
 Base
 or 
 ZKSync 
