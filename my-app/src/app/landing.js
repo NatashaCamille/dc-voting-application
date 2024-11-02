@@ -1,5 +1,6 @@
 //landing 
-Things to consider and amend to have 
+Things to consider and amend to have a mobile app
+
 
 Have to Test it
 Redevelop it
