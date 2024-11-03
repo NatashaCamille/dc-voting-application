@@ -1,6 +1,6 @@
 //landing 
 Things to consider and amend to have a mobile app
-
+With blockchain capabilities 
 
 Have to Test it
 Redevelop it
