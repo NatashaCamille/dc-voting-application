@@ -1,4 +1,4 @@
-//landing 
+//landing adjustments 
 Things to consider and amend to have a mobile app
 With blockchain capabilities 
 
