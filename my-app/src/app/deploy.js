@@ -1,1 +1,2 @@
-deploying on fleek
+Deploying on fleek
+Get a discord
